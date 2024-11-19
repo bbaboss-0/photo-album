@@ -11,7 +11,7 @@ export default function AppNavigation(){
         [ 
           {
                 element: <Login/>,
-                path: '/Login'
+                path: '/'
             }, 
             {
                 element: <RegisterForm/>,
