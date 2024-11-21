@@ -70,7 +70,7 @@ export default function LoginForm() {
           </Link>
           <p className="text-sm text-muted-foreground">
             Don't have an account?{" "}
-            <Link to="/RegisterForm" className="text-primary hover:underline">
+            <Link to="/Register" className="text-primary hover:underline">
               Register
             </Link>
           </p>

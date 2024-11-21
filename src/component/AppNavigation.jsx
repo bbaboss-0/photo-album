@@ -1,6 +1,6 @@
 import { useRoutes } from "react-router-dom"; 
 import Login from "./Login"; 
-import RegisterForm from "./RegisterForm";
+import Register from "./Register";
 import Navbar from "./Navbar"; 
 import Sidebar from "./Sidebar"
 import Dashbord from "./Dashbord"; 
@@ -14,8 +14,8 @@ export default function AppNavigation(){
                 path: '/'
             }, 
             {
-                element: <RegisterForm/>,
-                path: '/RegisterForm'
+                element: <Register/>,
+                path: '/Register'
             },  
            
             {
