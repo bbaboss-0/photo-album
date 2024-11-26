@@ -1,7 +1,7 @@
 import { useRoutes } from "react-router-dom"; 
 import Login from "./Login"; 
 import Register from "./Register";
-import Navbar from "./Navbar"; 
+// import  Navber  from "./Navbar";
 import Sidebar from "./Sidebar"
 import Dashbord from "./Dashbord"; 
 
@@ -18,17 +18,27 @@ export default function AppNavigation(){
                 path: '/Register'
             },  
            
-            {
-                element: <Navbar/>,
-                path: '/Navbar'
-            }, 
+            // {
+            //     element: <Navber/>,
+            //     path: '/navbar'
+            // }, 
+            //   {
+            //     element: <Sidebar/>,
+            //     path: '/Sidebar'
+            // },  
               {
-                element: <Sidebar/>,
-                path: '/Sidebar'
-            },  
-              {
-                element: <Dashbord/>,
-                path: '/Dashbord'
+                element: <Sidebar />,
+                  path: '/app',
+                  children: [
+                      {
+                          path: '',
+                          element: <>Ahmadfsdhgfvcuywhjdasfvyuchjfdsvjxncvbhjweagfvcghcjasvjhjdsziucgdsiufgwebgarsjfhrvshzgxfhjcmdsgxzfkjgchejfkdshxfbcjkszdhxfj,mcbkjmdsngzxfkj</>
+                    },
+                      {
+                          path: "dashboard",
+                          element: <>hello boss</>
+                      }
+                  ]
             }
             
         ]

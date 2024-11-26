@@ -1,15 +1,12 @@
 import * as React from "react"
 import {
   AudioWaveform,
+   LayoutDashboard,
   BookOpen,
-  Bot,
+  Handshake,
   Command,
-  Frame,
   GalleryVerticalEnd,
-  Map,
-  PieChart,
-  Settings2,
-  SquareTerminal,
+  Images,
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -28,8 +25,8 @@ import {
 const data = {
   user: {
     name: "shadcn",
-    email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    
+    
   },
   teams: [
     {
@@ -37,121 +34,74 @@ const data = {
       logo: GalleryVerticalEnd,
       plan: "Enterprise",
     },
-    {
-      name: "Acme Corp.",
-      logo: AudioWaveform,
-      plan: "Startup",
-    },
-    {
-      name: "Evil Corp.",
-      logo: Command,
-      plan: "Free",
-    },
+ 
   ],
   navMain: [
     {
-      title: "Playground",
+      title: "Dashbord",
       url: "#",
-      icon: SquareTerminal,
+      icon:  LayoutDashboard,
       isActive: true,
+      // items: [
+        // {
+        //   title: "History",
+        //   url: "#",
+        // }
+      
+      // ],
+    },
+    {
+      title: "Friends",
+      url: "#",
+      icon: Handshake,
       items: [
         {
-          title: "History",
+          title: "Friend List",
           url: "#",
         },
         {
-          title: "Starred",
+          title: "Friend Request",
           url: "#",
         },
         {
-          title: "Settings",
+          title: "Discover",
           url: "#",
         },
       ],
     },
+   
     {
-      title: "Models",
+      title: "Stashes",
       url: "#",
-      icon: Bot,
+      icon: Images,
       items: [
-        {
-          title: "Genesis",
-          url: "#",
-        },
-        {
-          title: "Explorer",
-          url: "#",
-        },
-        {
-          title: "Quantum",
-          url: "#",
-        },
+        // {
+        //   title: "General",
+        //   url: "#",
+        // },
+       
       ],
-    },
-    {
-      title: "Documentation",
-      url: "#",
+    }, 
+     {
+      title: "Document",
+      url: "/document",
       icon: BookOpen,
-      items: [
-        {
-          title: "Introduction",
-          url: "#",
-        },
-        {
-          title: "Get Started",
-          url: "#",
-        },
-        {
-          title: "Tutorials",
-          url: "#",
-        },
-        {
-          title: "Changelog",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Settings",
-      url: "#",
-      icon: Settings2,
-      items: [
-        {
-          title: "General",
-          url: "#",
-        },
-        {
-          title: "Team",
-          url: "#",
-        },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
-          url: "#",
-        },
-      ],
+      // items: [
+      //   {
+      //     title: "Introduction",
+      //     url: "#",
+      //   },
+      // ],
     },
   ],
-  projects: [
-    {
-      name: "Design Engineering",
-      url: "#",
-      icon: Frame,
-    },
-    {
-      name: "Sales & Marketing",
-      url: "#",
-      icon: PieChart,
-    },
-    {
-      name: "Travel",
-      url: "#",
-      icon: Map,
-    },
-  ],
+  // projects: [
+  //   {
+  //     name: "Design Engineering",
+  //     url: "#",
+  //     icon: Frame,
+  //   },
+ 
+  // ],
 }
 
 export function AppSidebar({
@@ -164,7 +114,7 @@ export function AppSidebar({
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        <NavProjects projects={data.projects} />
+        {/* <NavProjects projects={data.projects} /> */}
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />

@@ -21,11 +21,14 @@ export default function Register() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-  };
+  }; 
 
+  const navigate = useNavigate();
   return (
-    <div className="register-container">
-      <div className="register-card">
+ 
+      <div className="row">
+        <div className="col-md-6 register">
+           <div className="register-card">
         <h2 className="register-title">Create an Account</h2>
         <form onSubmit={handleSubmit} className="register-form">
           <div className="input-group">
@@ -67,8 +70,9 @@ export default function Register() {
             value={formData.password}
             onChange={handleChange}
             className="register-input"
-          />
-          <button type="submit" className="register-button">
+          /> 
+                    
+          <button onClick={() => navigate('/app')} type="submit" className="register-button">
             Register
           </button>
         </form>
@@ -79,6 +83,11 @@ export default function Register() {
           </Link>
         </p>
       </div>
-    </div>
+        </div>
+        <div className="col-md-6 register-image"> 
+        <h1>GRID IMAGES</h1>
+        </div>
+      </div>
+  
   );
 }
