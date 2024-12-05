@@ -10,8 +10,9 @@ import {
   Menu,
   ChevronDown,
   ChevronUp,
-} from "lucide-react";
-import { NavLink, useNavigate } from "react-router-dom";
+} from "lucide-react"; 
+
+import { NavLink, useNavigate, Outlet } from "react-router-dom";
 import { CgProfile } from "react-icons/cg";
 import '../style/Sidebar.css'
 function Sidebar() {
@@ -61,7 +62,7 @@ function Sidebar() {
 
         {/* Navigation Links */}
         <div className="sidebar-links">
-          <NavLink to="/patient/dashboard" className="sidebar-link">
+          <NavLink to="dashboard" className="sidebar-link">
             <LayoutDashboard /> Dashboard
           </NavLink>
 
@@ -72,33 +73,34 @@ function Sidebar() {
             </button>
             {isFriendDropdownOpen && (
               <div className="sidebar-dropdown">
-                <NavLink to="/friend-list" className="sidebar-dropdown-link">
+                <NavLink to="Friend-List" className="sidebar-dropdown-link">
                   Friend List
                 </NavLink>
-                <NavLink to="/friend-request" className="sidebar-dropdown-link">
+                <NavLink to="Friend-Request" className="sidebar-dropdown-link">
                   Friend Request
                 </NavLink>
-                <NavLink to="/discover" className="sidebar-dropdown-link">
+                <NavLink to="Discover" className="sidebar-dropdown-link">
                   Discover
                 </NavLink>
               </div>
             )}
           </div>
 
-          <NavLink to="/doctors" className="sidebar-link">
+          <NavLink to="Document" className="sidebar-link">
             <Files /> Document
           </NavLink>
-          <NavLink to="/albums" className="sidebar-link">
+          <NavLink to="Album" className="sidebar-link">
             <Album /> Albums
           </NavLink>
-          <NavLink to="/profile" className="sidebar-link">
+          <NavLink to="Profile" className="sidebar-link">
             <UserRoundPen /> Profile
-          </NavLink>
+          </NavLink> 
+          
         </div>
 
         {/* Sidebar Footer */}
-        <div className="sidebar-footer">
-          <CgProfile size={40} className="mx-auto mb-2" />
+        <div className="sidebar-footer mt-3">
+          <CgProfile size={40} className="mx-auto" />
           <p className="font-medium">MR. Bashir Jibrin</p>
           <p className="text-sm text-gray-500">User</p>
         </div>
@@ -108,19 +110,19 @@ function Sidebar() {
       <main className={`main-content ${isSidebarOpen ? "" : "collapsed"}`}>
         <nav className="navbar">
           <button className="sidebar-toggle" onClick={toggleSidebar}>
-            <Menu />
+            <Menu  />
           </button>
           <div className="navbar-icons">
             <button>
-              <Bell />
+              <Bell  />
             </button>
             <button onClick={() => navigate("/")}>
-              <LogOut />
+              <LogOut className="mr-3" />
             </button>
           </div>
         </nav>
-
-        <div className="p-6">Main content goes here.</div>
+       
+        <div className="p-6"><Outlet /></div>
       </main>
     </div>
   );

@@ -1,9 +1,14 @@
 import { useRoutes } from "react-router-dom"; 
 import Login from "./Login"; 
 import Register from "./Register";
-// import  Navber  from "./Navbar";
 import Sidebar from "./Sidebar"
-import Dashbord from "./Dashbord";  
+import Dashbord from "./Dashbord";   
+import FriendList from "./Friend-List"; 
+import FriendRequest from "./Friend-Request.jsx"; 
+import Discover from "./Discover";
+import Document from "./Document";  
+import Album from "./Album";
+import Profile from "./Profile";
 
 
 export default function AppNavigation(){
@@ -17,15 +22,6 @@ export default function AppNavigation(){
                 element: <Register/>,
                 path: '/Register'
             },  
-           
-            // {
-            //     element: <Navber/>,
-            //     path: '/navbar'
-            // }, 
-            //   {
-            //     element: <Sidebar/>,
-            //     path: '/Sidebar'
-            // },  
               {
                 element: <Sidebar />,
                   path: '/app',
@@ -36,7 +32,31 @@ export default function AppNavigation(){
                     },
                       {
                           path: "dashboard",
-                          element: <>hello boss</>
+                          element: <Dashbord />
+                      },
+                      {
+                          path: "Friend-List",
+                          element: <FriendList />
+                      },
+                      {
+                          path: "Friend-Request",
+                          element: <FriendRequest/>
+                      }, 
+                      {
+                          path: "discover",
+                          element: <Discover/>
+                      }, 
+                      {
+                          path: "Document",
+                          element: <Document/>
+                      }, 
+                      {
+                          path: "Profile",
+                          element: <Profile />
+                      },
+                      {
+                          path: "Album",
+                          element: <Album />
                       }
                   ]
             }
