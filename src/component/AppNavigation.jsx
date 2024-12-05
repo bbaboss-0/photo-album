@@ -3,7 +3,7 @@ import Login from "./Login";
 import Register from "./Register";
 // import  Navber  from "./Navbar";
 import Sidebar from "./Sidebar"
-import Dashbord from "./Dashbord"; 
+import Dashbord from "./Dashbord";  
 
 
 export default function AppNavigation(){
@@ -32,7 +32,7 @@ export default function AppNavigation(){
                   children: [
                       {
                           path: '',
-                          element: <>Ahmadfsdhgfvcuywhjdasfvyuchjfdsvjxncvbhjweagfvcghcjasvjhjdsziucgdsiufgwebgarsjfhrvshzgxfhjcmdsgxzfkjgchejfkdshxfbcjkszdhxfj,mcbkjmdsngzxfkj</>
+                          element: <>Ahmad</>
                     },
                       {
                           path: "dashboard",
