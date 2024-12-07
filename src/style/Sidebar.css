@@ -3,7 +3,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.75rem 1rem;
-    background-color: #ffffff;
+    background-color: #3b82f6; 
+    color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 30;
 }
@@ -11,6 +12,7 @@
 .navbar-icons {
     display: flex;
     gap: 5rem;  
+    /* background-color: #ffffff;  */
     
 }
 
@@ -18,18 +20,23 @@
     background: none;
     border: none;
     cursor: pointer;
-    color: #374151;
+    color: darkblue                                                                                                                                                                                                                                                                                             ;
     font-size: 1rem;
 }
 
 .navbar-icons button:hover {
-    color: #111827;
+    color: ;  
+    
 }
 .sidebar-container {
     display: flex;
     min-height: 100vh;
     background-color: #f9fafb;
     color: #1f2937;
+} 
+.side-logo{
+    border-radius: 300px;  
+    
 }
 
 /* Sidebar */
@@ -80,28 +87,29 @@
 
 .sidebar-links {
     flex: 1;
-    padding: 1rem;
-    overflow-y: auto;
+    padding: 0.5rem;
+    overflow-y: auto; 
 }
 
 .sidebar-link {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.75rem 1rem;
+    padding:  0.5rem;
     border-radius: 0.5rem;
     font-size: 1rem;
     color: #374151;
     text-decoration: none;
-    transition: background-color 0.2s, color 0.2s;
+    transition: background-color 0.1s, color 0.1s; 
 }
 
 .sidebar-link:hover {
-    background-color: #e5e7eb;
+    background-color: #3b82f6;
+    color: #ffffff;
 }
 
 .sidebar-link.active {
-    background-color: #3b82f6;
+    background-color: darkblue;
     color: #ffffff;
 }
 
@@ -116,18 +124,20 @@
     display: block;
     padding: 0.5rem 1rem;
     font-size: 0.875rem;
-    color: #374151;
+    color: #374151; 
+    /* background-color: ; */
     border-radius: 0.5rem;
     text-decoration: none;
-    transition: background-color 0.2s, color 0.2s;
+    transition: background-color 0.1s, color 0.1s;
 }
 
 .sidebar-dropdown-link:hover {
-    background-color: #e5e7eb;
+    background-color: #3b82f6; 
+    color: #ffffff;
 }
 
 .sidebar-dropdown-link.active {
-    background-color: #3b82f6;
+    background-color: darkblue;
     color: #ffffff;
 }
 

@@ -11,7 +11,7 @@ import {
   ChevronDown,
   ChevronUp,
 } from "lucide-react"; 
-
+import logo from "../assets/icon/picture.png";
 import { NavLink, useNavigate, Outlet } from "react-router-dom";
 import { CgProfile } from "react-icons/cg";
 import '../style/Sidebar.css'
@@ -52,13 +52,13 @@ function Sidebar() {
       >
         {/* Sidebar Logo */}
         <div className="sidebar-logo">
-          <img src="/logo.png" alt="Logo" />
+          <img className="side-logo" src={logo} alt="Logo" />
         </div>
 
         {/* Sidebar Header */}
-        <div className="sidebar-header">
+        {/* <div className="sidebar-header">
           <h1>My Sidebar</h1>
-        </div>
+        </div> */}
 
         {/* Navigation Links */}
         <div className="sidebar-links">

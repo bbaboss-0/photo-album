@@ -9,7 +9,7 @@ import Discover from "./Discover";
 import Document from "./Document";  
 import Album from "./Album";
 import Profile from "./Profile";
-
+import path from "path";
 
 export default function AppNavigation(){
     const element = useRoutes(
@@ -26,10 +26,10 @@ export default function AppNavigation(){
                 element: <Sidebar />,
                   path: '/app',
                   children: [
-                      {
-                          path: '',
-                          element: <>Ahmad</>
-                    },
+                    //   {
+                    //       path: '',
+                    //       element: <>Ahmad</>
+                    // },
                       {
                           path: "dashboard",
                           element: <Dashbord />
