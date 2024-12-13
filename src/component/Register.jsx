@@ -37,7 +37,7 @@ export default function Register() {
     <div className="register-container">
       <div className="row">
         <div className="col-md-6 register ">
-          <div className="register-card rounded-xl border bg-card text-card-foreground shadow w-auto">
+          <div className="register-card rounded-xl  bg-card text-card-foreground shadow w-auto">
             <h2 className="register-title ">Create an Account</h2>
             <form onSubmit={handleSubmit} className="register-form">
                 <input

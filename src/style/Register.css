@@ -4,35 +4,49 @@
     flex-direction: row;
     gap: 20px;
     justify-content: center;  
-    
+    /* background-image: url(../assets/images/img4.png); */
     align-items: center;
-    height: 100vh;
+    height: 100vh; 
+    margin: 0;
+} 
+.row{
+    padding: 0; 
+    margin: 0; 
+    height: 100vh; 
+    width: 100%;
 }
 
 .register {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
+    flex: 1;  
+    background-color: darkblue;  
+    /* border: 1px solid #000; */
+    
 }
 
 .register-card {
     border-radius: 10px; 
-    border: 1px solid white;
+    /* border: 1px solid crimson; */
     width: 100%;
     max-width: 400px;
     padding: 1rem; 
     text-align: center;
     background-color: transparent;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px); 
+    background-color: #ffffff;
 }
 
 .register-title {
     font-size: 36px;
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: 2rem; 
     margin-top: 2rem;
-    color: darkblue;
+    color: darkblue; 
+    /* border: 1px solid #ffffff;  */
+    /* background: darkblue;  */
+    border-radius: 10px;
 }
 
 
@@ -95,9 +109,10 @@
 }
 
 .register-link {
-    color: blue;
+    color: darkblue;
     text-decoration: none;
-    list-style: none;
+    /* list-style: none; */ 
+    font-weight: bolder;
 }
 
 .register-link:hover {
@@ -167,7 +182,7 @@
     align-items: center;
     justify-content: center;
     flex: 1; 
-
+/* background-image: url(../assets/images/img4.png); */
 
 }
 

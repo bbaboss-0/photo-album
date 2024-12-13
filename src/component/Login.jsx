@@ -40,7 +40,7 @@ export default function LoginForm() {
       <div className="row">
         <div className="col-md-6 login">
   <div className="login-card rounded-xl border bg-card text-card-foreground shadow w-auto">
-    <h2 className="login-title mt-5 mb-5">Log In</h2>
+    <h2 className="login-title mt-5 mb-5">LogIn</h2>
     <form onSubmit={handleSubmit} className="login-form">
       <input
         id="email"

@@ -99,10 +99,10 @@ function Sidebar() {
         </div>
 
         {/* Sidebar Footer */}
-        <div className="sidebar-footer mt-3">
+        <div className="sidebar-footer ">
           <CgProfile size={40} className="mx-auto" />
           <p className="font-medium">MR. Bashir Jibrin</p>
-          <p className="text-sm text-gray-500">User</p>
+          <p className="text-sm text-light-500">User</p>
         </div>
       </aside>
 

@@ -26,10 +26,6 @@ export default function AppNavigation(){
                 element: <Sidebar />,
                   path: '/app',
                   children: [
-                    //   {
-                    //       path: '',
-                    //       element: <>Ahmad</>
-                    // },
                       {
                           path: "dashboard",
                           element: <Dashbord />
