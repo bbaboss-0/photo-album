@@ -1,11 +1,10 @@
-import { NavLink, useNavigate, Outlet } from "react-router-dom";
-import Sidebar from './Sidebar'
 
-export default function Dashbord() {
+import React from 'react'
+
+function Dashbord() {
   return (
-    <div>
-     ghjkll
-    </div> 
-    
+    <div>Dashbord</div>
   )
 }
+
+export default Dashbord

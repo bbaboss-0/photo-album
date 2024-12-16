@@ -1,0 +1,7 @@
+body{
+    background-image: url(../assets/images/trashbackground.png); 
+    background-color: blue;
+} 
+.container{
+background-image: url(../assets/images/trashbackground.png);
+}

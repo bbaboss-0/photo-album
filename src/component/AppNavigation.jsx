@@ -7,8 +7,11 @@ import FriendList from "./Friend-List";
 import FriendRequest from "./Friend-Request.jsx"; 
 import Discover from "./Discover";
 import Document from "./Document";  
-import Album from "./Album";
-import Profile from "./Profile";
+import Album from "./Album"; 
+import Photos from "./Photos";
+import Videos from "./Videos";
+import Trash from "./Trash";
+import Profile from "./Profile"
 import path from "path";
 
 export default function AppNavigation(){
@@ -31,11 +34,11 @@ export default function AppNavigation(){
                           element: <Dashbord />
                       },
                       {
-                          path: "Friend-List",
+                          path: "friend-list",
                           element: <FriendList />
                       },
                       {
-                          path: "Friend-Request",
+                          path: "friend-request",
                           element: <FriendRequest/>
                       }, 
                       {
@@ -43,17 +46,30 @@ export default function AppNavigation(){
                           element: <Discover/>
                       }, 
                       {
-                          path: "Document",
+                          path: "document",
                           element: <Document/>
                       }, 
                       {
-                          path: "Profile",
-                          element: <Profile />
-                      },
-                      {
-                          path: "Album",
+                          path: "album",
                           element: <Album />
-                      }
+                      },   
+                        {
+                          path: "photos",
+                          element: <Photos />
+                      }, 
+                         {
+                          path: "trash",
+                          element: <Trash />
+                        },
+                        {
+                          path: "videos",
+                          element: <Videos />
+                      }, 
+                        {
+                          path: "profile",
+                          element: <Profile />
+                      } 
+                        
                   ]
             }
             

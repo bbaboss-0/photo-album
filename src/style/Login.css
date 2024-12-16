@@ -126,7 +126,8 @@ border-radius: 10px;
     color: white;
     cursor: pointer;
     transition: all 0.3s ease; 
-    text-transform: uppercase;
+    text-transform: uppercase; 
+    font-weight: bold;
 }
 
 .login-button:hover {

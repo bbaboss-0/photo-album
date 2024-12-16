@@ -20,10 +20,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;  
+    flex: 1;   
     background-color: darkblue;  
-    /* border: 1px solid #000; */
-    
 }
 
 .register-card {
@@ -181,7 +179,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1; 
+    flex: 1;  
 /* background-image: url(../assets/images/img4.png); */
 
 }
@@ -192,7 +190,8 @@
     gap: 15px;
     padding: 20px;
     height: 100%; 
-    flex: 1;
+    flex: 1; 
+   
 }
 
 .grid-item {

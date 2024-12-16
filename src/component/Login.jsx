@@ -63,7 +63,7 @@ export default function LoginForm() {
         className="login-input"
       />
       <button
-        onClick={() => navigate('/app')}
+        onClick={() => navigate('/app/dashboard')}
         type="submit"
         className="login-button mb-4 mt-3"
       >
