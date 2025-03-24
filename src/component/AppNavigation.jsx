@@ -1,7 +1,7 @@
 import { useRoutes } from "react-router-dom"; 
 import Login from "./Login"; 
 import Register from "./Register";
-import Sidebar from "./Sidebar"
+import Sidebar from "./Sidebar" 
 import Dashbord from "./Dashbord";   
 import FriendList from "./Friend-List"; 
 import FriendRequest from "./Friend-Request.jsx"; 
@@ -69,6 +69,7 @@ export default function AppNavigation(){
                           path: "profile",
                           element: <Profile />
                       } 
+                 
                         
                   ]
             }
@@ -80,4 +81,79 @@ export default function AppNavigation(){
 } 
 
 
+// import { useRoutes } from "react-router-dom"
+// import Login from "./Login"
+// import Register from "./Register"
+// import Sidebar from "./Sidebar"
+// import Dashboard from "./Dashboard"
+// import FriendList from "./Friend-List"
+// import FriendRequest from "./Friend-Request"
+// import Discover from "./Discover"
+// import Document from "./Document"
+// import Album from "./Album"
+// import Photos from "./Photos"
+// import Videos from "./Videos"
+// import Trash from "./Trash"
+// import Profile from "./Profile"
+
+// export default function AppNavigation() {
+//   const element = useRoutes([
+//     {
+//       path: "/",
+//       element: <Login />,
+//     },
+//     {
+//       path: "/register",
+//       element: <Register />,
+//     },
+//     {
+//       path: "/app",
+//       element: <Sidebar />,
+//       children: [
+//         {
+//           path: "dashboard",
+//           element: <Dashboard />,
+//         },
+//         {
+//           path: "friend-list",
+//           element: <FriendList />,
+//         },
+//         {
+//           path: "friend-request",
+//           element: <FriendRequest />,
+//         },
+//         {
+//           path: "discover",
+//           element: <Discover />,
+//         },
+//         {
+//           path: "document",
+//           element: <Document />,
+//         },
+//         {
+//           path: "album",
+//           element: <Album />,
+//         },
+//         {
+//           path: "photos",
+//           element: <Photos />,
+//         },
+//         {
+//           path: "trash",
+//           element: <Trash />,
+//         },
+//         {
+//           path: "videos",
+//           element: <Videos />,
+//         },
+//         {
+//           path: "profile",
+//           element: <Profile />,
+//         },
+//       ],
+//     },
+//   ])
+
+//   return element
+// }
 

@@ -1,62 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* Add the following to ensure smooth transitions for the sidebar */
-.transition-transform {
-    transition: transform 0.3s ease-in-out;
-}
-.sidebar {
-    width: 250px;
-    height: 100vh;
-    /* background-color: darkblue;  */
-    
-    color: white;
-    position: fixed;
-    left: 0;
-    top: 0;
-    transition: all 0.3s;
+/* Custom scrollbar for the sidebar */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
 }
 
-.sidebar.open {
-    left: 0;
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
 }
 
-.sidebar:not(.open) {
-    left: -250px;
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
 }
 
-.toggle-btn {
-    position: absolute;
-    right: -40px;
-    top: 10px;
-    background: #2c3e50;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
 
-.sidebar-header {
-    padding: 20px;
-    text-align: center;
-    border-bottom: 1px solid #34495e;
+/* Active route styling */
+.active-route {
+  @apply bg-white/20 text-white;
 }
 
-.sidebar-nav {
-    padding: 20px 0;
+/* Transition effects */
+.sidebar-transition {
+  @apply transition-all duration-300 ease-in-out;
 }
 
-.nav-item {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s;
+/* Collapsed sidebar icon styling */
+.icon-only {
+  @apply flex h-9 w-9 items-center justify-center rounded-lg text-white/80 transition-colors hover:bg-white/10 hover:text-white;
 }
 
-.nav-item:hover {
-    background-color: #34495e;
-}
-
-.nav-item svg {
-    margin-right: 10px;
-}
